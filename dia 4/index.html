@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Formularios e Atributos</title>
+</head>
+<body>
+    <div class="divisao1">
+        <h1>Divisao 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, laudantium rem ut asperiores totam atque vel doloremque repellendus quasi pariatur eius tempore ullam praesentium dignissimos natus aut provident harum dolorum!</p>
+        <p></p>
+    </div>
+    <div class="divisao2">
+        <h1>Divisao 2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, laudantium rem ut asperiores totam atque vel doloremque repellendus quasi pariatur eius tempore ullam praesentium dignissimos natus aut provident harum dolorum!</p>
+        <p></p>
+    </div>
+    <hr>
+    <div class="Tabela1">
+        <h1>Tabela 1</h1>
+            <table border="1" align="center">
+                <tr>
+                    <td>DATA</td>
+                    <td>NOTA FISCAL</td>
+                    <td>RAZAO SOCIAL</td>
+                    <td>VALOR</td>
+                </tr>
+                <tr>
+                    <td>12/03/2012</td>
+                    <td>008579</td>
+                    <td>Guilherme Padovani Silveira</td>
+                    <td>R$459,90</td>
+                </tr>
+            </table>
+    </div>
+    <div class="Tabela2">
+        <h1>Tabela 2</h1>
+            <table align="center" border="5">
+                <thead><!--USAR THEAD FICA MAIS SEMANTICO E ORGANIZADO-->
+                    <tr>
+                        <th>DATA</th>
+                        <th>NOTA FISCAL</th>
+                        <th>RAZAO SOCIAL</th>
+                        <th>VALOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><!--USAR O TBODY JUNTO COM O THEAD FICA MAIS SEMANTICO, OS 2 DEVEM SER USADOS JUNTOS -->
+                        <td>12/03/2012</td>
+                        <td>008579</td>
+                        <td>Guilherme Padovani Silveira</td>
+                        <td>R$459,90</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <hr>
+    <div class="formulario">
+        <h1>Formulario Simples</h1>
+        <form action="">
+            <input type="text">
+            <input type="password">
+            <textarea name="comentario" id="" cols="30" rows="10">Digiete seu comentario malandro</textarea>
+            <input type="button" value="Enviar">
+        </form>
+        
+    </div>
+</body>
+</html>
