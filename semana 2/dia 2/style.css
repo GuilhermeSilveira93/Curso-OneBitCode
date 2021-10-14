@@ -1,0 +1,21 @@
+
+html,body{
+    width: 100%;
+}
+body{
+    background-color: #313C54;
+    color: #ffffff;
+}
+h1{
+    color:#ffffff
+}
+h2{
+    color: #F1CB00;
+}
+h3{
+    background-color: #F1CB00;
+    color: rgb(0, 0, 0);
+}
+.redd{
+    color: rgb(255, 0, 0);
+}
