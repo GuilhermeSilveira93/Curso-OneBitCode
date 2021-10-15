@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    font-family: Montserrat, roboto;
+}
+.materia{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fffafa;
+    padding: 20px;
+}
+h1{
+    font-family: 'Montserrat','Roboto', open-sans;
+    margin-bottom: 20px;
+}
+hr{
+    margin: 50px auto;
+}
+h2{
+    color: #008080;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
