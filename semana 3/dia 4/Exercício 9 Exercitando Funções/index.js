@@ -55,6 +55,8 @@ let spaceshipName = prompt("Informe o nome da nave: ")
 //1- Acelerar a nave em 5km/s\n2- Desacelerar em 5km/s\n3- Imprimir dados de bordo\n4- Sair do programa
 let vel = 0
 //Uma função para cada ação do menu de acelerar, desacelerar e imprimir dados de bordo.
+let op = prompt("Informe uma opção válida:\n\n1- Acelerar a nave em 5km/s\n2- Desacelerar em 5km/s\n3- Imprimir dados de bordo\n4- Sair do programa")
+
 function speedUp(){
     vel+=5
 }
@@ -64,23 +66,19 @@ function speedDown(){
 function Data(){
     alert("Nome da nave: " + spaceshipName + "\nVelocidade atual: " + vel + "km/s.")
 }
-let op = prompt("Informe uma opção válida:\n\n1- Acelerar a nave em 5km/s\n2- Desacelerar em 5km/s\n3- Imprimir dados de bordo\n4- Sair do programa")
+
 do{
     if(op == "1"){
         speedUp()
         //alert("Estamos a " + vel + "km/s.")
-    }
-    else if(op == "2"){
+    }else if(op == "2"){
         speedDown()
         //alert("Estamos a " + vel + "km/s.")
-    }
-    else if(op == "3"){
+    }else if(op == "3"){
         Data()
-    }
-    else if(op == "4"){
+    }else if(op == "4"){
         break
-    }
-    else{
+    }else{
         //caso a pessoa escolha um número que não está na lista, terá que exibir o menu novamente até que tenha uma opção válida.
         alert("Número inválido, tente novamente.")
     }
