@@ -1,14 +1,14 @@
-function speedDown(velocity, print){
-  let deceleration = 20
-  while(velocity > 0){
+function speedDown(velocity, print) {
+  let deceleration = prompt('Qual a velociade de Desaceleração ?')
+  while (velocity > 0) {
     print(velocity)
     velocity -= deceleration
   }
   alert("Nave Parada. Comportas abertas")
 }
 
-let velocidadedanave = 150
+let velocidadedanave = prompt('Qual a velocidade atual ?')
 
-speedDown(velocidadedanave, function(velocity){
+speedDown(velocidadedanave, function (velocity) {
   console.log("Velocidade atual: " + velocity)
 })

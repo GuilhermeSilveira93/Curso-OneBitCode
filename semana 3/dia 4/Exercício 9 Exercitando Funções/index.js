@@ -57,31 +57,33 @@ let vel = 0
 //Uma função para cada ação do menu de acelerar, desacelerar e imprimir dados de bordo.
 let op = prompt("Informe uma opção válida:\n\n1- Acelerar a nave em 5km/s\n2- Desacelerar em 5km/s\n3- Imprimir dados de bordo\n4- Sair do programa")
 
-function speedUp(){
-    vel+=5
-}
-function speedDown(){
-    vel-= 5
-}
-function Data(){
-    alert("Nome da nave: " + spaceshipName + "\nVelocidade atual: " + vel + "km/s.")
+function speedUp() {
+  vel += 5
 }
 
-do{
-    if(op == "1"){
-        speedUp()
-        //alert("Estamos a " + vel + "km/s.")
-    }else if(op == "2"){
-        speedDown()
-        //alert("Estamos a " + vel + "km/s.")
-    }else if(op == "3"){
-        Data()
-    }else if(op == "4"){
-        break
-    }else{
-        //caso a pessoa escolha um número que não está na lista, terá que exibir o menu novamente até que tenha uma opção válida.
-        alert("Número inválido, tente novamente.")
-    }
-    op = prompt("Informe uma opção válida:\n\n1- Acelerar a nave em 5km/s\n2- Desacelerar em 5km/s\n3- Imprimir dados de bordo\n4- Sair do programa")
-    //Encerrar o app somente quando digitar para sair
-}while(op!="4")
+function speedDown() {
+  vel -= 5
+}
+
+function Data() {
+  alert("Nome da nave: " + spaceshipName + "\nVelocidade atual: " + vel + "km/s.")
+}
+
+do {
+  if (op == "1") {
+    speedUp()
+    //alert("Estamos a " + vel + "km/s.")
+  } else if (op == "2") {
+    speedDown()
+    //alert("Estamos a " + vel + "km/s.")
+  } else if (op == "3") {
+    Data()
+  } else if (op == "4") {
+    break
+  } else {
+    //caso a pessoa escolha um número que não está na lista, terá que exibir o menu novamente até que tenha uma opção válida.
+    alert("Número inválido, tente novamente.")
+  }
+  op = prompt("Informe uma opção válida:\n\n1- Acelerar a nave em 5km/s\n2- Desacelerar em 5km/s\n3- Imprimir dados de bordo\n4- Sair do programa")
+  //Encerrar o app somente quando digitar para sair
+} while (op != "4")
