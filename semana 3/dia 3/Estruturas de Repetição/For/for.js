@@ -1,10 +1,10 @@
-let spaceShip = "Helmet"
+let spaceShip = "Guilherme"
 let newSpaceShip = ""
 
 for (let i = 0; i < spaceShip.length; i++) {
-  if(spaceShip[i] == "e"){
+  if (spaceShip[i] == "e") {
     newSpaceShip += "i"
-  }else{
+  } else {
     newSpaceShip += spaceShip[i]
   }
 }

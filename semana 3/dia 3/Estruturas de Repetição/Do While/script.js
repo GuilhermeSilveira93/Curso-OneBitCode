@@ -1,7 +1,7 @@
 let velocity = 50
 let aceleration = 5
 
-do {
+do /* FAÇA */ {
   console.log("Acelerando: estamos a " + velocity)
   velocity += aceleration
-} while (velocity <= 100);
+} while /* ENQUANTO */ (velocity <= 100);
