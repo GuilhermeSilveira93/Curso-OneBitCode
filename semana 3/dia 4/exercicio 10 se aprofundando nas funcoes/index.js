@@ -1,6 +1,6 @@
 function speedDown(velocity, print) {
   let deceleration = prompt('Qual a velociade de Desaceleração ?')
-  while (velocity > 0) {
+  while (velocity >= 0) {
     print(velocity)
     velocity -= deceleration
   }
@@ -10,5 +10,5 @@ function speedDown(velocity, print) {
 let velocidadedanave = prompt('Qual a velocidade atual ?')
 
 speedDown(velocidadedanave, function (velocity) {
-  console.log("Velocidade atual: " + velocity)
+  console.log("Velocidade atual: " + velocity +"km/h")
 })
