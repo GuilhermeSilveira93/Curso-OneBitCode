@@ -1,5 +1,5 @@
-function doubevelocity(velocity, printer){
-                                //CALLBACK (altaclasse)
+function doubevelocity(velocity, printer) {
+  //CALLBACK (altaclasse)
   console.log("Entrei em DoubleVelocity")
   let newvelocity = velocity * 2
   printer(newvelocity)
@@ -7,7 +7,7 @@ function doubevelocity(velocity, printer){
 }
 //FUNÇÃO ANONIMA QUE VAI IMPRIMIR
 let printVelocity = velocity => {
-  console.log("Nova Velocidade: "+ velocity + "km/s")
+  console.log("Nova Velocidade: " + velocity + "km/s")
 }
 var newvelocity = doubevelocity(60, printVelocity)
 console.log(newvelocity)

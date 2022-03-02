@@ -48,7 +48,7 @@ do {
       break;
   }
 } while (escolha != "4");*/
-
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 //Receber nome da nave
 let spaceshipName = prompt("Informe o nome da nave: ")
 //velocidade da nave inicial = 0; menu deve ser exibido para que o usuário escolha entre as seguintes op:
