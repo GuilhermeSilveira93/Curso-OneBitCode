@@ -1,10 +1,10 @@
-let hitchedSpaceship = ['Super Nova', 'Elemental', 'Helmet']/*ARRAY*/
+let hitchedSpaceship = ['Super Nova', 'Elemental', 'Helmet'] /*ARRAY*/
 
-console.log(hitchedSpaceship[2])
+console.log(hitchedSpaceship[2]) /* vai pegar o ultimo dado */
 
-let spaceship = new Array(1,2,3,4,"Olá")
+let spaceship = new Array('variavel sapceship: ', 1, 2, 3, 4 + "Olá")
 
 console.log(spaceship)
 
-let getNumber = new Array(5)
-console.log(getNumber)
+let getNumber = new Array(5) /* mais usado para controle de memoria, aqui ele vai reservar 5 espaços na memoria.*/
+console.log(getNumber, 'teste') /*VEJA QUE ELE VAI FICAR COM  ... AO EXECUTAR*/

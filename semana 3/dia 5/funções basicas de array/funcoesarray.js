@@ -1,16 +1,16 @@
-let naveEspacial = ['SpaceX','Milenium Falcon']
+let naveEspacial = ['SpaceX', 'Milenium Falcon']
 console.log(naveEspacial)
 
-naveEspacial.push('Obzidian')/*Adiciona um Elemento no final*/
+naveEspacial.push('Obzidian') /*Adiciona um Elemento no final*/
 console.log(naveEspacial)
 
-naveEspacial.pop()/*Apaga Ultimo Elemento*/
+naveEspacial.pop() /*Apaga Ultimo Elemento*/
 console.log(naveEspacial)
 
-naveEspacial.shift()/*Apaga o Primeiro Elemento*/
+naveEspacial.shift() /*Apaga o Primeiro Elemento*/
 console.log(naveEspacial)
 
-naveEspacial.unshift('Fenix')/*Adiciona um novo elemento no começo*/
+naveEspacial.unshift('Fenix') /*Adiciona um novo elemento no começo*/
 console.log(naveEspacial)
 
-console.log(naveEspacial.length)/*Apaga o Primeiro Elemento*/
+console.log(naveEspacial.length) /*APRESENTA O NÚMERO DE CARACTERES.*/
