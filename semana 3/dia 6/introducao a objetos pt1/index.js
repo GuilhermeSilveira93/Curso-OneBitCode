@@ -10,8 +10,22 @@
  */
 
 let spaceship = {
-  name: "Fenix",
-  crew: 7,
-  Type: "Batalha"
+      name: "Fenix",
+      crew: 7,
+      Type: "Batalha"
 }
 console.log(spaceship)
+console.log(spaceship.Type)
+console.log(spaceship['name'])
+
+/*adicionando propriedade no objeto*/
+spaceship.isHitched = false
+console.log(spaceship)
+
+/*outra forma*/
+spaceship["shieldLevel"] = 100 /*não gostei dessa*/
+console.log(spaceship)
+
+/*CHAMANDO*/
+console.log(spaceship.shieldLevel)
+console.log(spaceship["isHitched"])
