@@ -1,8 +1,11 @@
-let spaceship = {};
-spaceship.velocity = 0;
-spaceship.name = prompt("Qual o nome da nave:");
-spaceship.type = prompt("Qual o tipo da nave:");
-spaceship.maxVelocity = Number(prompt("Digite a velocidade máxima da nave?"));
+/*DECLARANDO VARIAVEIS*/
+let spaceship = {};/*objeto vazio*/
+spaceship.velocity = 0;/*adicionando objetos*/
+spaceship.name = prompt("Qual o nome da nave:");/*adicionando objetos*/
+spaceship.type = prompt("Qual o tipo da nave:");/*adicionando objetos*/
+spaceship.maxVelocity = Number(prompt("Digite a velocidade máxima da nave?"));/*adicionando objetos*/
+
+/*colocando uma função dentro do objeto*/
 spaceship.finalMessage = function () {
   alert(`
     Nome da espaçonave: ${spaceship.name}
@@ -10,6 +13,9 @@ spaceship.finalMessage = function () {
     Velocidade atual da espaçonave: ${spaceship.velocity} km/s
   `);
 };
+/*-------------------------------------------------------------*/
+
+/*colocando uma função dentro do objeto*/
 spaceship.acceleration = function (speed) {
   speed = Number(prompt("Quanto você quer acelerar?"));
   this.velocity += speed;
@@ -18,9 +24,12 @@ spaceship.acceleration = function (speed) {
         PERIGO! Risco de combustão!
         Velocidade atual da espaçonave: ${this.velocity} km/s
         Velocidade máxima permitida: ${this.maxVelocity} km/s
-      `);
+      `);/* this serve para abreviarmos, como faz mensão a mesma variavel, usamos os o THIS para não ter que escrever, nesse caso, o spaceship . varias vezes. */
   };
 }
+/*----------------------------------------------------------------*/
+
+/*FUNÇÃO PRINCIPAL, QUE VAI CHAMAR TODAS*/
 spaceship.speedUp = function (option) {
   do {
     option = prompt(`
@@ -39,3 +48,4 @@ spaceship.speedUp = function (option) {
   } while (option !== "2");
 };
 spaceship.speedUp();
+/*----------------------------------------------------------------*/
