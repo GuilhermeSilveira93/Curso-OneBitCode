@@ -11,17 +11,17 @@ class NaveEspacial {
   }
 }
 
-let spaceList = []
+let listanave = []
 
 function cadastro(){
  let nome = prompt(`Qual o nome da sua nave?`)
  let quantidadeTripulantes = prompt(`Quantos tripulantes ela tem?`)
  new NaveEspacial (nome, quantidadeTripulantes, true , true)/* NEW FAZ OS DADOS ENTRAREM NO CONSTRUTOR DA CLASSE*/
- spaceList.push(nome + " " + quantidadeTripulantes)/*ADICIONA DADOS AO ARRAY*/
+ listanave.push(nome + " " + quantidadeTripulantes)/*ADICIONA DADOS AO ARRAY*/
 }
 
 function imprime(){
- let imprimenave =  spaceList.join(`\n`)/*INCLUIU A QUEBRA DE LINHAS ENTRE AS VARIAVEIS / JOIN*/
+ let imprimenave =  listanave.join(`\n`)/*INCLUIU A QUEBRA DE LINHAS ENTRE AS VARIAVEIS / JOIN*/
   alert(`${imprimenave}`)
 }
 
