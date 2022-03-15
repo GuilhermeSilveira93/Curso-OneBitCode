@@ -27,6 +27,7 @@ class spaceship{
 }
 
 class battlespaceship extends spaceship { /*Extends vai "herdar"*/
+
   stop(){
     this.currentspeed = 0
     alert('Recolhendo armas e preparando nave de batalha')
