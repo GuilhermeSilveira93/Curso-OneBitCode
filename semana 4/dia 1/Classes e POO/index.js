@@ -7,8 +7,8 @@
 */
 
 /*-------------------------------CRIANDO CLASSE-------------------------------------*/
-class spaceship {/*                   lembra muito uma function                     */
-
+class spaceship {/*             lembra muito uma function                     
+                                                        Mas com Chaves*/
 }
 
 let myspaceship = new spaceship() /* lembra como chama uma função  */
