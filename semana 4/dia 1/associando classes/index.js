@@ -14,6 +14,6 @@ class spaceship{
   }
 }
 
-let navinha = new spaceship('LightYear','Buzz','Guilherme',15000)
+let navinha = new spaceship('LightYear','Buzz','Guilherme',28,1500)
 
 console.log(navinha)
