@@ -13,11 +13,18 @@ class spaceship{
   }
 }
 class transportespaceship extends spaceship{
-  speedUp(){
-    alert('Nave de transporte só aumenta a velocidade em 1km/s')
-    this.currentspeed += 1
+  constructor(name, maxCrew,maxRecommendedVelocity,maxloadwight){   /*ESTOU PUXANDO AS CARACTERISTICAS DO SPACESHIP */
+    super(name, maxCrew,maxRecommendedVelocity) /* E REPASSANDO AQUI */
+    this.maxloadwight = maxloadwight
+  }
+  speedUp(acceleration){
+    acceleration /= 2
+    alert('incrementando velocidade em ' + acceleration +'  km/s')
+    super.speedUp(acceleration)
   }
 }
-let tranportespaceship = new transportespaceship('Transportadora',4,100)
+let transportespaceship1 = new transportespaceship('Transportadora',4,100,400)
 
-tranportespaceship.speedUp(200)
+console.log(transportespaceship1)
+
+transportespaceship1.speedUp(210)
