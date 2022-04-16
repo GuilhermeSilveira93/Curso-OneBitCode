@@ -15,6 +15,7 @@ class transportenaveespacial{
 
 let naveespacial = new transportenaveespacial('Transportador')
 
-naveespacial.velocidade = 130
+naveespacial.velocidade = 10 /*NÃO É UM PARAMETRO, POR ISSO TEMOS QUE "RECEBER"(=)
+UM VALOR*/
 
 console.log(naveespacial)
