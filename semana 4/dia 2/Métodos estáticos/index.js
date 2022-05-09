@@ -3,14 +3,14 @@ class estacaodeprocessamentorecurso{
     this.nome = nome
     this.processamentomensal = processamentomensal
   }
-  static calculandorpocessoemhoras(processamentomensal,horas){
+  static calculandoprocessoemhoras(processamentomensal,horas){
     return processamentomensal / 720 * horas
   }
 }
 
 let processamento = new estacaodeprocessamentorecurso('Gaia',2000)
 
-let totalprocessado = estacaodeprocessamentorecurso.calculandorpocessoemhoras(processamento.processamentomensal,10)
+let totalprocessado = estacaodeprocessamentorecurso.calculandoprocessoemhoras(processamento.processamentomensal,10)
 
 console.log(totalprocessado)
 
