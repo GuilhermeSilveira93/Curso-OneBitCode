@@ -19,6 +19,7 @@ switch (tiponave) {
     alert('Digite uma Opção Válida')
     break;
 }
+
 let opcao  = prompt('1 - Acelerar Nave.\n2 - Trocar de Nave.\n3 - Imprimir e Sair.')
 
 switch (opcao) {
