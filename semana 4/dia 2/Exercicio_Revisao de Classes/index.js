@@ -8,6 +8,10 @@ class NaveEspacial{
     constructor(nome,quantidade_tripulantes){
     this.nome = nome
     this.quantidade_tripulantes = quantidade_tripulantes
+    this.velocidade_atual = 0
+    }
+    speedUp(){
+        this.velocidade_atual += (aceleracao * (1 - 0.17))
     }
 }
 class Nave_Batalha{
@@ -25,7 +29,7 @@ class Nave_Transporte{
 
 let nome_nave = prompt("Digite o nome da Nave.")
 let quantidade_tripulantes = prompt("Digite a quantidade de Tripulantes.")
-let velocidade_atual = 0
+let 
 
 /*
 --------------------------------------------------------------------------------------------------------------------------------
