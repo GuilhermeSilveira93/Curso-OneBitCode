@@ -5,13 +5,16 @@ Para a nave, que for cadastrada, precisamos de:  *Nome
                                                                               *Quantidade de Tripulantes
 */
 class NaveEspacial{
+    static get TaxaDesaceleracao(){
+        return 0.17
+    }
     constructor(nome,quantidade_tripulantes){
     this.nome = nome
     this.quantidade_tripulantes = quantidade_tripulantes
     this.velocidade_atual = 0
     }
-    speedUp(){
-        this.velocidade_atual += (aceleracao * (1 - 0.17))
+    speedUp(aceleracao){
+        this.velocidade_atual += aceleracao * (1 - NaveEspacial.TaxaDesaceleracao)
     }
 }
 class Nave_Batalha{
@@ -29,8 +32,21 @@ class Nave_Transporte{
 
 let nome_nave = prompt("Digite o nome da Nave.")
 let quantidade_tripulantes = prompt("Digite a quantidade de Tripulantes.")
-let 
 
+function MenuInicial(){
+    let nome_nave = prompt("Digite o nome da Nave.")
+    let quantidade_tripulantes = prompt("Digite a quantidade de Tripulantes.")
+    let tipo_nave = 
+    prompt("Qual o tipo da Nave?\n1 - Nave de Batalha\n2 - Nave de Transporte")
+    switch (tipo_nave) {
+        case 1:
+            
+            break;
+    
+        default:
+            break;
+    }
+}
 /*
 --------------------------------------------------------------------------------------------------------------------------------
 Os veículos podem ser de batalha ou de transporte.
