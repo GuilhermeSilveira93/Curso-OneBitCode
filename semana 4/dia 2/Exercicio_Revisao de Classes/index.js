@@ -60,17 +60,15 @@ function Menu2(){
             this.NaveEspacial.speedUp(speedup)
             break;
         case "2":
-            var quantidade_assentos = prompt("Digite a quantidade de Assentos")
-            var Transporte = new Nave_Transporte(nome_nave,quantidade_tripulantes,quantidade_assentos)
+            MenuInicial()
         break
         default:
             alert("opção inválida")
             while(tipo_nave != 1 || tipo_nave != 2){  
-                opcaomenu = prompt("Qual o tipo da Nave?\n1 - Nave de Batalha\n2 - Nave de Transporte")
+                opcao = prompt("Qual o tipo da Nave?\n1 - Nave de Batalha\n2 - Nave de Transporte")
               }
             break;
     }
-    console.log(Batalha)
 }
 Menu2()
 console.log(Batalha)
