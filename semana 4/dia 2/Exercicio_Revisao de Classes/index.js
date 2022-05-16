@@ -56,8 +56,8 @@ function Menu2(){
     let opcao = prompt("O que gostaria de fazer ?\n1 - Acelerar a Nave.\n2 - Trocar de Nave.\n3 - Imprimir e sair. ")
     switch (opcao) {
         case "1":
-            var aceleracao = Number(prompt("Quanto gostaria de acelerar?"))
-            this.NaveEspacial.speedUp(aceleracao)
+            var speedup = Number(prompt("Quanto gostaria de acelerar?"))
+            this.NaveEspacial.speedUp(speedup)
             break;
         case "2":
             var quantidade_assentos = prompt("Digite a quantidade de Assentos")
@@ -70,9 +70,10 @@ function Menu2(){
               }
             break;
     }
+    console.log(Batalha)
 }
 Menu2()
-console.log(Nave_Batalha)
+console.log(Batalha)
 /*
 --------------------------------------------------------------------------------------------------------------------------------
 Os veículos podem ser de batalha ou de transporte.
