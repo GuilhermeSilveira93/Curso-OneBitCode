@@ -17,36 +17,61 @@ class NaveEspacial{
         this.velocidade_atual += aceleracao * (1 - NaveEspacial.TaxaDesaceleracao)
     }
 }
-class Nave_Batalha{
+class Nave_Batalha extends NaveEspacial{
     constructor(nome,quantidade_tripulantes,quantidade_armas){
     super(nome,quantidade_tripulantes)
     this.quantidade_armas = quantidade_armas
 }
 }
-class Nave_Transporte{
+class Nave_Transporte extends NaveEspacial{
     constructor(nome,quantidade_tripulantes,quantidade_assentos){
     super(nome,quantidade_tripulantes)
     this.quantidade_assentos = quantidade_assentos
 }
 }
-
-let nome_nave = prompt("Digite o nome da Nave.")
-let quantidade_tripulantes = prompt("Digite a quantidade de Tripulantes.")
-
 function MenuInicial(){
     let nome_nave = prompt("Digite o nome da Nave.")
     let quantidade_tripulantes = prompt("Digite a quantidade de Tripulantes.")
-    let tipo_nave = 
-    prompt("Qual o tipo da Nave?\n1 - Nave de Batalha\n2 - Nave de Transporte")
+    let tipo_nave = prompt("Qual o tipo da Nave?\n1 - Nave de Batalha\n2 - Nave de Transporte")
     switch (tipo_nave) {
-        case 1:
-            
+        case "1":
+            var quantidade_armas = prompt("Digite a quantidade de Armas da Nave")
+            var Batalha = new Nave_Batalha(nome_nave,quantidade_tripulantes,quantidade_armas)
             break;
-    
+        case "2":
+            var quantidade_assentos = prompt("Digite a quantidade de Assentos")
+            var Transporte = new Nave_Transporte(nome_nave,quantidade_tripulantes,quantidade_assentos)
+        break
         default:
+            alert("opção inválida")
+            while(tipo_nave != 1 || tipo_nave != 2){  
+                opcaomenu = prompt("Qual o tipo da Nave?\n1 - Nave de Batalha\n2 - Nave de Transporte")
+              }
             break;
     }
 }
+MenuInicial()
+
+function Menu2(){
+    let opcao = prompt("O que gostaria de fazer ?\n1 - Acelerar a Nave.\n2 - Trocar de Nave.\n3 - Imprimir e sair. ")
+    switch (opcao) {
+        case "1":
+            var aceleracao = Number(prompt("Quanto gostaria de acelerar?"))
+            this.NaveEspacial.speedUp() = aceleracao
+            break;
+        case "2":
+            var quantidade_assentos = prompt("Digite a quantidade de Assentos")
+            var Transporte = new Nave_Transporte(nome_nave,quantidade_tripulantes,quantidade_assentos)
+        break
+        default:
+            alert("opção inválida")
+            while(tipo_nave != 1 || tipo_nave != 2){  
+                opcaomenu = prompt("Qual o tipo da Nave?\n1 - Nave de Batalha\n2 - Nave de Transporte")
+              }
+            break;
+    }
+}
+
 /*
 --------------------------------------------------------------------------------------------------------------------------------
 Os veículos podem ser de batalha ou de transporte.
