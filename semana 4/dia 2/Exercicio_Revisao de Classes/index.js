@@ -57,7 +57,7 @@ function Menu2(){
     switch (opcao) {
         case "1":
             var aceleracao = Number(prompt("Quanto gostaria de acelerar?"))
-            this.NaveEspacial.speedUp() = aceleracao
+            this.NaveEspacial.speedUp(aceleracao)
             break;
         case "2":
             var quantidade_assentos = prompt("Digite a quantidade de Assentos")
@@ -71,6 +71,7 @@ function Menu2(){
             break;
     }
 }
+Menu2()
 
 /*
 --------------------------------------------------------------------------------------------------------------------------------
