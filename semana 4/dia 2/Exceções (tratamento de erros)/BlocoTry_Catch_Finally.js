@@ -28,5 +28,8 @@ fenixweapon.shoot()
 }catch(e){
   console.log(e.message)
   fenixweapon.reload()
+}finally{
+  console.log("Arma deu bons tiros")
 }
+/*FINALLY É UM BLOCO OPCIONAL*/
 console.log(fenixweapon)
