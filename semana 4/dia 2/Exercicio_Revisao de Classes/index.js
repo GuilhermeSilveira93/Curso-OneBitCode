@@ -71,7 +71,6 @@ function Menu2(){
     }
 }
 Menu2()
-console.log(Batalha)
 /*
 --------------------------------------------------------------------------------------------------------------------------------
 Os veículos podem ser de batalha ou de transporte.
