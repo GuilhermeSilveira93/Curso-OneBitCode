@@ -5,29 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Exercicio</title>
   
 </head>
 <body>
 <form action="" id="formulariocasa">
-  <h3>CASA 1</h3>
   <p>
     <label for="">Bairro: </label>
-    <input type="text" name="bairro">
+    <input type="text" name="bairro" required>
   </p>
   <p>
     <label for="">Cidade: </label>
-    <input type="text" name="cidade">
+    <input type="text" name="cidade" required>
   </p>
   <p>
     <label for="">Área da casa: </label>
-    <input type="number" name="area">
+    <input type="number" name="area" required>
   </p>
   <p>
     <label for="">Número: </label>
-    <input type="number" name="numero">
+    <input type="number" name="numero" required>
   </p>
   <ul id="listadinamica"></ul><!--DEIXAMOS CRIADO PARA RECEBER DINAMICAMENTE O ELEMENTO-->
+  <br>
   <button onclick="Listar()" type="button">Listar</button>
 </form>
 </body>

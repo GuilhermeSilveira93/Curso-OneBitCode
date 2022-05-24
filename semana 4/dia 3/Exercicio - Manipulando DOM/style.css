@@ -1,0 +1,14 @@
+form{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 350px;
+}
+input{
+  border-radius: 10px;
+}
+ul{
+  text-align: left;
+}
