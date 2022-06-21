@@ -11,7 +11,7 @@ class spaceship {/*             lembra muito uma function
                                                         Mas com Chaves*/
 }
 
-let myspaceship = new spaceship() /* lembra como chama uma função  */
+let myspaceship = new spaceship('10',20) /* lembra como chama uma função  */
 
 console.log(myspaceship) /* vai imprimir o objeto */
 
