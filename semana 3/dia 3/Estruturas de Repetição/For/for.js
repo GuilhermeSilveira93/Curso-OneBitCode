@@ -9,3 +9,15 @@ for (let i = 0; i < spaceShip.length; i++) {
   }
 }
 console.log(newSpaceShip)
+
+
+
+//numeros impares
+let number = 100
+for (let index = number; index > 0; index--) {
+  if (index % 2 !== 0) {
+    console.log(index + ' impar')
+  }else{
+    console.log(index + ' par')
+  }
+}
