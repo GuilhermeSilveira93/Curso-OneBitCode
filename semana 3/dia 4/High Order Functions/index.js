@@ -11,3 +11,7 @@ let printVelocity = velocity => {
 }
 var newvelocity = doubevelocity(60, printVelocity)
 console.log(newvelocity)
+
+let aquiUmaFuncao = parametro => { console.log('Parametro: ' + parametro)}
+var novafunc = aquiUmaFuncao('10')
+console.log(novafunc)
