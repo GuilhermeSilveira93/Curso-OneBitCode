@@ -40,9 +40,9 @@ class DiscoverySpaceship extends spaceship { /*Extends vai "herdar"*/
     alert('Recolhendo equipamento de amostras e parando nave de descoberta')
   }
 }
-let darwin = new DiscoverySpaceship('Busão Darwin', 40, 100)
-let fenix = new battlespaceship('Fenix', 8, 548)
-
+let darwin = new DiscoverySpaceship('Busão Darwin', 40, 110)
+let fenix = new battlespaceship('Fenix', 8, 80)
+let navesemaceleracao = new spaceship('Parada', 10,10)
 darwin.speedUp(110)
 console.log(fenix)
 console.log(darwin)
