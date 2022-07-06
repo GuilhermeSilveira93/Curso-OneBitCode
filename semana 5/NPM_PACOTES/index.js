@@ -1,2 +1,2 @@
 const today = moment().format('DD/MM/YYYY')
-alert(`Data Atual: ${today}`)
+console.log(`Data Atual: ${today}`)
