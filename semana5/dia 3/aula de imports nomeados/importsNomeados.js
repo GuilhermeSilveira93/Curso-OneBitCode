@@ -1,0 +1,1 @@
+import { laserDefenses } from "../aula de exports nomeados/exportNomeado";
